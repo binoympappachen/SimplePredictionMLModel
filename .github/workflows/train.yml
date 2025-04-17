@@ -28,9 +28,7 @@ jobs:
     - name: Run training script
       run: python model.py
 
-    - name: Show GITHUB_TOKEN for Debugging (optional)
-      run: echo ${{ secrets.GITHUB_TOKEN }}
-    - name: Commit and push model.pkl
+     - name: Commit and push model.pkl
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
