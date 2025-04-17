@@ -38,7 +38,7 @@ jobs:
         git commit -m "Auto-commit: updated model.pkl" || echo "No changes to commit"
         
         # Set the Git remote URL with GITHUB_TOKEN
-        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-
+         git remote set-url origin https://github-actions[bot]:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+   
          # Push the changes
          git push origin HEAD:${{ github.ref }}
