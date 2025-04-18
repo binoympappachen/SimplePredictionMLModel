@@ -1,1 +1,1 @@
-Test Readme file
+This project is aiming simple pretrained model deployment
